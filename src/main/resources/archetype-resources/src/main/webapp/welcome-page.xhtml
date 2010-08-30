@@ -1,6 +1,3 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -17,7 +14,7 @@
     <h1>Hello World!</h1>
 
     <p>
-      Date: ${symbol_pound}{welcomeBean.currentDate}
+      Date: #{welcomeBean.currentDate}
     </p>
     
     <p>
@@ -25,7 +22,7 @@
     </p>
     
     <pretty:urlbuffer var="welcomePath" mappingId="welcome"/>
-    <pre>${symbol_pound}{welcomePath}</pre>
+    <pre>#{welcomePath}</pre>
     
     <p>
       You can easily create links to this page using the 
