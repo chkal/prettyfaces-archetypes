@@ -1,0 +1,42 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:pretty="http://ocpsoft.com/prettyfaces">
+	
+	<h:head>
+		<title>Hello PrettyFaces</title>
+	</h:head>
+	
+	<h:body>
+
+    <h1>Hello World!</h1>
+
+    <p>
+      Date: ${symbol_pound}{welcomeBean.currentDate}
+    </p>
+    
+    <p>
+      This page is accessible with the following path:
+    </p>
+    
+    <pretty:urlbuffer var="welcomePath" mappingId="welcome"/>
+    <pre>${symbol_pound}{welcomePath}</pre>
+    
+    <p>
+      You can easily create links to this page using the 
+      <span style="font-family: monospace;">pretty:link</span> component:
+    </p>
+    
+    <p>
+      <pretty:link mappingId="welcome">Click me!</pretty:link>
+    </p>
+    
+	
+	</h:body>
+	
+</html>
