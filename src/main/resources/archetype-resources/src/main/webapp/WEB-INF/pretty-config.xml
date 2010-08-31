@@ -1,18 +1,20 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
 <?xml version="1.0"?>
-<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.0.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.0.2 http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.0.2.xsd">
 
   <!-- initial redirect to /welcome -->
-  <rewrite match="^/?$" substitute="/welcome" redirect="301" />
-  
+  <rewrite match="^/?${symbol_dollar}" substitute="/welcome" redirect="301" />
+
   <!-- Alternative way of defining the mapping for the welcome page. -->
   <!-- Use this if you don't want to configure mappings via annotations. -->
-  <!-- 
-  <url-mapping id="welcome">
-    <pattern value="/welcome" />
-    <action onPostback="true">#{welcomeBean.initView}</action>
-    <view-id>/faces/welcome-page.xhtml</view-id>
-  </url-mapping>
+  <!--
+    <url-mapping id="welcome"> <pattern value="/welcome" /> <action
+    onPostback="true">${symbol_pound}{welcomeBean.initView}</action>
+    <view-id>/faces/welcome-page.xhtml</view-id> </url-mapping>
   -->
 
 </pretty-config>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="prettyfaces-archetype-base-jsf2"
+<archetype-descriptor
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+    name="prettyfaces-archetype-jsf2">
+
   <fileSets>
-  
+
     <!-- classes -->
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
       <directory>src/main/java</directory>
@@ -12,15 +14,22 @@
         <include>**/*.java</include>
       </includes>
     </fileSet>
-    
-    <!-- webapp content -->
+
+    <!-- WEB-INF -->
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/webapp/WEB-INF</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+
+    <!-- webapp root -->
     <fileSet filtered="false" encoding="UTF-8">
       <directory>src/main/webapp</directory>
       <includes>
         <include>**/*.xhtml</include>
-        <include>**/*.xml</include>
       </includes>
     </fileSet>
-    
+
   </fileSets>
 </archetype-descriptor>
