@@ -7,6 +7,13 @@
   <packaging>maven-archetype</packaging>
   <name>PrettyFaces Archetype JSF 2.0</name>
 
+  <distributionManagement>
+    <repository>
+      <id>gh-pages</id>
+      <url>file:///${basedir}/../prettyfaces-archetypes-pages/repository/</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <extensions>
       <extension>
