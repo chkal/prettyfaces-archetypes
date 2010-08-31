@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>PrettyFaces Archetype JSF 2.0</name>
+      <prefix>prettyfaces-archetype-jsf2</prefix>
+      <artifactId>prettyfaces-archetype-jsf2</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
