@@ -5,13 +5,13 @@ package ${package};
 
 import java.util.Date;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
 
 import com.ocpsoft.pretty.faces.annotation.URLAction;
 import com.ocpsoft.pretty.faces.annotation.URLMapping;
 
-@ManagedBean
+@Named
 @RequestScoped
 @URLMapping(id = "welcome", pattern = "/welcome", viewId = "/faces/welcome-page.xhtml")
 public class WelcomeBean
