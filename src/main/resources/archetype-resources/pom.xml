@@ -81,4 +81,21 @@
 
   </dependencies>
 
+  <repositories>
+
+    <!-- Can be removed after release of PrettyFaces 3.0.2 -->
+    <repository>
+      <id>ocpsoft</id>
+      <name>OcpSoft</name>
+      <url>http://ocpsoft.com/repository/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+
+  </repositories>
+
 </project>
