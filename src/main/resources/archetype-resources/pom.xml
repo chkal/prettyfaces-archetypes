@@ -27,10 +27,6 @@
         <artifactId>maven-embedded-glassfish-plugin</artifactId>
         <version>3.0.1</version>
         <configuration>
-          <!--
-          <goalPrefix>embedded-glassfish</goalPrefix>
-          <app>test.war</app>
-          -->
           <port>9090</port>
           <contextRoot>/</contextRoot>
           <autoDelete>true</autoDelete>
@@ -67,13 +63,14 @@
 
   </dependencies>
 
-  <!-- Repository for Embedded Glassfish -->
   <pluginRepositories>
+
+    <!-- Repository for Embedded Glassfish plugin -->
     <pluginRepository>
-      <id>maven2-repository.dev.java.net</id>
-      <name>Java.net Repository for Maven</name>
+      <id>glassfish-repository</id>
       <url>http://download.java.net/maven/glassfish/</url>
     </pluginRepository>
+
   </pluginRepositories>
 
 </project>
