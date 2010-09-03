@@ -11,5 +11,10 @@
       <prefix>prettyfaces-archetype-jsf12</prefix>
       <artifactId>prettyfaces-archetype-jsf12</artifactId>
     </plugin>
+    <plugin>
+      <name>PrettyFaces Archetype Java EE 6</name>
+      <prefix>prettyfaces-archetype-jee6</prefix>
+      <artifactId>prettyfaces-archetype-jee6</artifactId>
+    </plugin>
   </plugins>
 </metadata>

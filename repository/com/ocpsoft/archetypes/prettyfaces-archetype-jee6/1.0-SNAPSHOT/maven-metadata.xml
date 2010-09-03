@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ocpsoft.archetypes</groupId>
+  <artifactId>prettyfaces-archetype-jee6</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20100903.054900</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20100903054900</lastUpdated>
+  </versioning>
+</metadata>
