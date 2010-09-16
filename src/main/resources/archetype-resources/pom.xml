@@ -9,7 +9,6 @@
   <name>${artifactId}</name>
 
   <build>
-
     <plugins>
 
       <!-- Set target JDK to 1.6 -->
@@ -18,18 +17,6 @@
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
-        </configuration>
-      </plugin>
-
-      <!-- Embedded Glassfish -->
-      <plugin>
-        <groupId>org.glassfish</groupId>
-        <artifactId>maven-embedded-glassfish-plugin</artifactId>
-        <version>3.0.1</version>
-        <configuration>
-          <port>9090</port>
-          <contextRoot>/</contextRoot>
-          <autoDelete>true</autoDelete>
         </configuration>
       </plugin>
 
@@ -62,6 +49,27 @@
     </dependency>
 
   </dependencies>
+
+  <!-- Embedded -->
+  <profiles>
+    <profile>
+      <id>glassfish</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.glassfish</groupId>
+            <artifactId>maven-embedded-glassfish-plugin</artifactId>
+            <version>3.0.1</version>
+            <configuration>
+              <port>9090</port>
+              <contextRoot>/</contextRoot>
+              <autoDelete>true</autoDelete>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
   <pluginRepositories>
 
